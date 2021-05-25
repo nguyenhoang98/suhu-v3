@@ -1,0 +1,44 @@
+.tendency{
+    height:400px ;
+    &::after{
+      content: '';
+      clear: both;
+      display: table;
+    }
+    &__left{
+      width: 66%;
+      height:400px ;
+      position: relative;
+      &__card{
+        width:100% ;
+        height:400px ;
+          height: 100%;
+          &__image{
+              width:100% ;
+              height:400px ;
+          }
+      }
+    } 
+    &__right{
+      flex-basis: 33%;
+      height:400px ;
+      font-size: 1.2rem;
+      &__card{
+        width:100% ;
+        height:90px;;
+        &__image{
+            width:20% ;
+            height:90px ;
+        }
+        &__title{
+            width:80% ;
+            height:90px ; 
+            padding:10px ;
+        }
+      }
+    }
+}
+.tendency-image{
+    width:100% ;
+    height: 90px;
+}

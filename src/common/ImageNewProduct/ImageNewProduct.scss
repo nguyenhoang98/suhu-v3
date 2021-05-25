@@ -1,0 +1,10 @@
+.new-product-image{
+    width:100% ;
+    height: 350px ;
+}
+
+@media screen and (min-width : 1200px) {
+    .new-product-image{
+        height: 450px;
+    }
+}

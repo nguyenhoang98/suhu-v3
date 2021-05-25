@@ -1,0 +1,27 @@
+$background: #fefefe;
+$text: #4b507a;
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+$black : #333 ;
+.title{
+    margin-top:30px ;
+    text-align:center ;
+    font-size: 20px;
+    text-transform: uppercase;
+    & h2{
+        text-align:center ;
+        display: inline-block;
+        background: linear-gradient(to right , red  , $blue ) ;
+        color:transparent ;
+        background-clip: text;
+        letter-spacing: 8px;
+        cursor: pointer;
+        &:hover{
+            color: $cyan;
+        }
+    }
+}

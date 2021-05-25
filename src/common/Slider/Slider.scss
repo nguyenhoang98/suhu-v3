@@ -1,0 +1,42 @@
+
+$background: #fefefe;
+$text: #4b507a;
+
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+.slider{
+  width:100% ;
+  height: 60% ;
+  &__content{
+    width:100% ;
+    height:100% ;
+  }
+}
+.banner{
+  width:100% ;
+  height: 100%;
+}
+.slick-next , 
+.slick-prev{
+  display: none !important;
+}
+.slick-dots button{
+  background: black !important;
+  border-radius: 50%;
+}
+.slick-dots button::before{
+  content: '' !important ;
+  width:inherit ;
+  height: inherit;
+  background: inherit;
+  border-radius: 50%;
+}
+.slick-active button{
+  background: red !important ;
+  border-radius: 50%;
+  z-index: 10 ;
+}

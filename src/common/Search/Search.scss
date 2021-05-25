@@ -1,0 +1,30 @@
+$background: #fefefe;
+$text: #4b507a;
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+$black : #333 ;
+.search{
+    position: relative;
+}
+.input-search{
+    width:100% ;
+    border:none ;
+    outline: none;
+    padding:10px 45px ;
+    border-radius: 5px ;
+    background: rgb(228, 244, 248) ;
+    transform: translateY(-2px);
+    font-size: 1.7rem;
+}
+.search-img{
+    width:35px; 
+    height:35px ;
+    position: absolute;
+    top:50%; 
+    left:10px ;
+    transform: translateY(-50%);
+}
