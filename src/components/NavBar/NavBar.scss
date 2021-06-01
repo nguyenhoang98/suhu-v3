@@ -32,14 +32,6 @@ $black : #333 ;
     &__contact{
         margin-top:10px ;
     }
-    &__logo{
-        & a{
-            padding:10px 10px;
-            color:black ;
-            text-decoration: none;
-            font-size: 2rem;
-        }
-    }
     &__user{
         width:100% ;
         height: auto;
@@ -135,13 +127,6 @@ $black : #333 ;
         font-size:1.2rem ;
     }
 
-}
-.logo{
-    width:100px ;
-    height:100px ;
-    transform: scale(1.5);
-    display: block;
-    margin:auto ;
 }
 .hot{
     width:50px ;

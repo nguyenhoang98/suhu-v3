@@ -1,5 +1,5 @@
 .tendency{
-    height:400px ;
+    height:350px ;
     &::after{
       content: '';
       clear: both;
@@ -7,32 +7,31 @@
     }
     &__left{
       width: 66%;
-      height:400px ;
+      height:350px ;
       position: relative;
       &__card{
         width:100% ;
-        height:400px ;
+        height:350px ;
           height: 100%;
           &__image{
               width:100% ;
-              height:400px ;
+              height:350px ;
           }
       }
     } 
     &__right{
       flex-basis: 33%;
-      height:400px ;
+      height:350px ;
       font-size: 1.2rem;
       &__card{
         width:100% ;
-        height:90px;;
+        height:907x;
         &__image{
             width:20% ;
-            height:90px ;
+            height:70px ;
         }
         &__title{
             width:80% ;
-            height:90px ; 
             padding:10px ;
         }
       }
@@ -40,5 +39,29 @@
 }
 .tendency-image{
     width:100% ;
-    height: 90px;
+    height: 70px;
+}
+
+@media screen and (min-width: 2000px ){
+  .tendency{
+    height: 400px ;
+    &__left{
+      height: 400px;
+       &__card{
+         height: 400px;
+          &__image {
+            height: 400px;
+          }
+       }
+    }
+    &__right{
+      height: 400px;
+      &__card{
+        height: 70px;
+        &__image{
+          height: 70px;
+        }
+      }
+    }
+  }
 }

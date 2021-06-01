@@ -1,0 +1,31 @@
+.noti{
+    width:350px;
+    height: 370px;
+    overflow: auto;
+    position: fixed;
+    top:50px; 
+    right:25px ;
+    z-index: 99;
+    background: rgb(228, 244, 248);
+    padding:20px ;
+    color:#333 ;
+    &__empty{
+        display: block;
+        margin:auto ;
+        font-size: 1.2rem;
+        position: absolute;
+        top:50% ;
+        left:50% ;
+        transform: translate(-50% , -50%);
+        &__content{
+            display: block;
+            margin:auto ;
+        }
+    }
+    &__content{
+        font-size: 1.2rem;
+        &__line{
+            margin-bottom: 10px;
+        }
+    }
+}

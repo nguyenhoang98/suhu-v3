@@ -1,4 +1,10 @@
 .hot-image-product{
     width:100% ;
-    height:270px ;
+    height:200px ;
+}
+
+@media screen and (min-width : 2000px) {
+    .hot-image-product{
+        height: 270px;
+    }
 }

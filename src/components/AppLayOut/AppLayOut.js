@@ -5,6 +5,7 @@ import menuRouters from '../../routers/menuRouters';
 import Navbar from '../NavBar/NavBar';
 import SearchLookUpModal from '../SearchLookUpModal/SearchLookUpModal';
 function AppLayOut(props) {
+  const { handleOpenCart, handleOpenLogin } = props;
   const [isOpenLookUpModal, setIsOpenLookUpModal] = useState(false);
   const location = useLocation();
   const { pathname } = location;
@@ -17,7 +18,11 @@ function AppLayOut(props) {
   return (
     <div>
       {pathname !== '/Dang-nhap' && (
-        <Navbar handleOnOpenLookUpModal={onOPenLookUpModal} />
+        <Navbar
+          handleOnOpenLookUpModal={onOPenLookUpModal}
+          handleOpenCart={handleOpenCart}
+          handleOpenLogin={handleOpenLogin}
+        />
       )}
       <div className="main">
         <Switch>

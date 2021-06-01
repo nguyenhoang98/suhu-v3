@@ -1,7 +1,6 @@
 import Home from '../pages/Home/Home';
 import Male from '../pages/Male/Male';
 import Female from '../pages/Female/Female';
-import Login from '../pages/Login/Login';
 import NotFound from '../pages/NotFound/NotFound';
 
 const menuRouters = [
@@ -18,11 +17,6 @@ const menuRouters = [
   {
     component: () => <Female />,
     path: '/Thoi-trang-nu',
-    exact: false,
-  },
-  {
-    component: () => <Login />,
-    path: '/Dang-nhap',
     exact: false,
   },
   {

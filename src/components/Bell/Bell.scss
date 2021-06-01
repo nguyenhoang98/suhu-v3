@@ -1,0 +1,25 @@
+.bell{
+    position: fixed;
+    top:15px;
+    right:25px ;
+    font-size: 2.5rem;
+    cursor: pointer;
+    &__count{
+        position: absolute;
+        top:-5px; 
+        left:50% ;
+        transform: translateX(-50%);
+        background: red;
+        color:white ;
+        width:20px ;
+        height: 20px;
+        border-radius: 50%;
+        &__number{
+            position: absolute;
+            top:50% ;
+            left:50% ;
+            transform: translate(-50% , -50%);
+            font-size: 1.2rem;
+        }
+    }
+}

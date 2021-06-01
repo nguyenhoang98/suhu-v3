@@ -1,0 +1,66 @@
+.cart-look-up-modal{
+    width:100% ;
+    height: 100% ;
+    position: fixed;
+    top:0px ;
+    left:0px ;
+    background: rgba(194, 189, 189, 0.562) ;
+    font-size: 1.5rem ;
+    &__content{
+        width:70% ;
+        height: 80vh;
+        position: absolute;
+        top:50% ;
+        left:50% ;
+        transform: translate(-50% , -50%);
+        background: white;
+        color:#333 ;
+        padding:0 20px ;
+        overflow-y: auto;
+    }
+}
+.close-cart{
+    position: absolute;
+    top:6% ;
+    right:12% ;
+    color:white  ;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.cart{
+    display: flex;
+}
+.info , 
+.order-box{
+    background: rgb(228, 244, 248);
+    margin:10px; 
+    padding:0 10px ;
+}
+.image-cart{
+    width:90px; 
+    height: 120px;
+}
+.description{
+    flex: 1;
+    padding:0 20px ;
+    &__cart{
+        flex: 1;
+    }
+}
+.btn-reduction ,
+.btn-increase{
+    border:1px solid #333 ;
+    padding:5px 15px ;
+}
+.description__price , 
+.description__action ,
+.quantity{
+    margin:0 10px ;
+}
+.btn-order{
+    width:100% ;
+    height: auto;
+    background: red;
+    color:white ;
+    padding:10px ;
+}

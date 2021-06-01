@@ -2,20 +2,20 @@ import React from 'react';
 import './NavBar.scss';
 import { Link } from 'react-router-dom';
 import Search from '../../common/Search/Search';
-import logo from '../../assets/logo.png';
+import Logo from '../../common/Logo/Logo';
 
 function NavBar(props) {
-  const { handleOnOpenLookUpModal } = props;
+  const { handleOnOpenLookUpModal, handleOpenCart, handleOpenLogin } = props;
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <img src={logo} className="logo" />
+        <Logo width={150} height={150} />
       </div>
 
       <div className="navbar__user">
         <ul>
           <li>
-            <Link to="/Dang-nhap">
+            <Link to="/Trang-chu" onClick={handleOpenLogin}>
               <span className="navbar__icon">
                 <i className="fas fa-sign-in-alt"></i>
               </span>
@@ -31,7 +31,7 @@ function NavBar(props) {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/Trang-chu" onClick={handleOpenCart}>
               <span className="navbar__icon">
                 <i className="fas fa-luggage-cart"></i>
               </span>

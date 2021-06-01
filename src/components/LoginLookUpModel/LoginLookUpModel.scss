@@ -4,14 +4,18 @@
     position: fixed;
     top:0px;
     left:0px ;
-    &__form{
+    background: rgba(75, 75, 75, 0.637) ;
+    &__content{
         width:500px ;
         height: auto;
         position: absolute;
-        top:0px ;
+        top:0px; 
+        left:0px ;
+        top:50% ;
         left:50% ;
-        transform: translate(-50% , 0);
-        padding:20px; 
+        transform: translate(-50% , -50%);
+        background: white ;
+        padding:0px 20px 40px 20px ;
     }
 }
 .group-form{
@@ -28,7 +32,7 @@
         padding:10px ;
         border:none ;
         outline: none;
-        background: rgb(228, 244, 248)
+        background: rgb(228, 244, 248) ;
     }
 }
 .btn-login ,
@@ -44,12 +48,6 @@
 .btn-reset{
     background: red;
 }
-.back-home{
-    color:#333 ;
-    text-decoration: underline;
-    font-size: 1.6rem;
-    display: block;
-}
 .btn-login-facebook ,
 .btn-login-google{
     width:100% ;
@@ -64,4 +62,12 @@
 .btn-login-google{
     background: tomato;
     margin-top:10px;
+}
+.close-login{
+    position: absolute;
+    top:-30px ;
+    right:-30px ;
+    color:white ;
+    cursor: pointer;
+    font-size: 20px;
 }

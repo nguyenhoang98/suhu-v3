@@ -11,7 +11,7 @@ function SearchLookUpModal(props) {
     <div className="search-lookup-modal" id="search-lookup-modal">
       <div className="search-lookup-modal__content">
         <span className="close-modal" onClick={handleCloseLookUpModal}>
-          <i class="fas fa-times"></i>
+          <i className="fas fa-times"></i>
         </span>
         <input
           type="text"

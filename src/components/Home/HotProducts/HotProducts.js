@@ -124,7 +124,7 @@ function HotProducts(props) {
   const { title } = props;
   return (
     <>
-      <Title title={title} />
+      <Title title={title} size={22} />
       <div className="hot-products flex">
         {data.map((value, index) => {
           return (

@@ -52,7 +52,7 @@ function Tendency(props) {
   const { title } = props;
   return (
     <>
-      <Title title={title} />
+      <Title title={title} size={22} />
       <div className="tendency flex">
         <div className="tendency__left">
           <Sliders {...settings}>
